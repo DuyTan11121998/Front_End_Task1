@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".wrapper").toggleClass("collapse");
+            });
+            $('.submenu').click(function(){
+                $(this).toggleClass("active")
+            })
+        }); 
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">CMMS</div>
+                <ul>
+                    <li><a href="#">
+                            <i class="fas fa-user"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-bell"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="title">Dashboard</span></a></li>
+                <li><a href="#">
+                        <span class="icon"><i class="fas fa-file-video"></i></span>
+                        <span class="title">Movies</span>
+                    </a></li>
+                <li class="submenu"><a href="#">
+                        <span class="icon"><i class="far fa-chart-bar"></i></span>
+                        <span class="title">Chart</span>
+                        <span class="sub"><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <ul>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                            <span class="title">Chart pie</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-chart-area"></i></span>
+                            <span class="title">Chart area</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon"><i class="fas fa-chart-line"></i></span>
+                            <span class="title">Chart line</span>
+                        </a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="drop">
+                        <span class="icon"><i class="fas fa-blog"></i></span>
+                        <span class="title">Blogs</span>
+                    </a></li>
+                <li><a href="#" class="active">
+                        <span class="icon"><i class="fab fa-facebook"></i></span>
+                        <span class="title">Facebook</span>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <div class="content">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script>
+        </footer>
+        
+    </div>
+
+</body>
+
+</html>
